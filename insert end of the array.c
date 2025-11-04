@@ -1,0 +1,18 @@
+// insert at the end of the array
+#include <stdio.h>
+#define CAP 10
+int main(){
+    int arr[CAP]={1,2,3};
+    int n=3;
+    int value=7;
+    if(n<CAP){
+        arr[n]=value;
+        n++;
+    }
+    else{
+        printf("array is full maane ogu");
+    }
+    for(int i=0;i<n;i++){
+        printf("%d",arr[i]);
+    }
+} 
